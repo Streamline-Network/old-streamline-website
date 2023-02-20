@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+.menu li {
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background-color: #00bbc2;
+  transition: ease 250ms;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  outline-style: solid;
+  outline-color: rgb(151, 151, 151);
+  outline-width: 2px;
+  text-align: center;
+  width: 100%;
+}
+
+.name {
+  padding-left: 25px;
+  font-size: 25px;
+}
+
+.menu {
+  overflow: hidden;
+  font-family: sans-serif;
+  list-style-type: none;
+  flex-shrink: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+.profileTR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 4px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: rgb(73, 73, 73);
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 133.86px;
+}
+
+.profileTR:hover {
+  background-color: rgb(77, 195, 206);
+  transition: ease-in-out 250ms;
+}
+
+.profileTR p {
+  margin-left: 12px;
+  margin-right: 5px;
+}
+
+.profileTR i {
+  margin-left: 10px;
+}
+
+.arrow {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.mainBody {
+  width: 100%;
+}
+
+.content {
+  margin: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.dropdown {
+  flex-wrap: nowrap;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 120px;
+  display: none;
+  right: 16px;
+  position: absoulute;
+  z-index: 10;
+}
+
+.profileTR:hover .dropdown {
+  display: flex;
+}
+
+.dropdown p {
+  background-color: rgb(85, 85, 85);
+  width: 150.766px;
+  padding: 3px;
+}
+
+.dropdown p:hover {
+  background-color: rgb(77, 195, 206);
+  transition: ease 250ms;
+}
+
+.i1 {
+  border-radius: 6px 6px 0px 0px;
+}
+
+.i3 {
+  border-radius: 0px 0px 6px 6px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  width: 100%;
+  outline-style: solid;
+  outline-color: rgb(151, 151, 151);
+  outline-width: 2px;
+  text-align: center;
+  height: 70px;
+  bottom: 0px;
+  background-color: rgb(36, 36, 36);
+}
+
+.icon {
+  height: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.horizontalList {
+  overflow: hidden;
+  font-family: sans-serif;
+  list-style-type: none;
+  margin-right: 25px;
+}
+
+.horizontalList li {
+  float: left;
+  padding: 0px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 817px) {
+  .name {
+    padding-left: 8px;
+    font-size: 9px;
+  }
+
+  .menu {
+    width: 200px;
+    font-size: 10px;
+  }
+
+  .menu li {
+    padding: 0px;
+  }
+
+  .profileTR {
+    font-size: 7px;
+    margin-left: 0;
+    flex-shrink: 10;
+    margin-right: 8px;
+  }
+
+  .profileTR i {
+    display: none;
+  }
+
+  .profileTR p {
+    margin: 0;
+  }
+
+  .icon {
+    height: 20px;
+  }
+
+  footer {
+    height: 50px;
+  }
+
+  .menu li {
+    border-radius: 1px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html {
+  background-color: rgb(36, 36, 36);
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu hr {
+  border-color: white;
+  transition: 500ms ease;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media only screen and (max-device-width: 329px) {
+  .menu {
+    width: 170px;
+    font-size: 7px;
+  }
+
+  .name {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (max-device-width: 256px) {
+  * {
+    display: none;
+  }
+}

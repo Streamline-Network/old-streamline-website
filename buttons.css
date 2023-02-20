@@ -1,0 +1,55 @@
+
+
+.btn-main {
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 4px;
+    margin-top: 60px;
+    padding: 20px;
+    width: 300px;
+    position: sticky;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 200ms ease;
+    align-self: center;
+}
+
+.main-btn-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    transition: 200ms ease;
+    text-align: center;
+}
+
+.btn-main:hover {
+    background-color: #fff;
+    transition: 200ms ease;
+}
+
+.btn-main:hover .main-btn-text {
+    transition: 200ms ease;
+    color: rgb(77, 195, 206);
+}
+
+.btn-main-line {
+    position: absolute;
+    align-items: center;
+    width: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2px;
+    border-color: white;
+    transition: 300ms ease;
+
+}
+
+.btn-main:hover .btn-main-line{
+    transition: 300ms ease;
+    border-color: black;
+    transform: translate(-50%, -23px)
+} 
+
+.flex-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
